@@ -1,6 +1,6 @@
 const NumberApp = (() => {
     let numbers = [];
-    let availableNumbers = Array.from({ length: 99 }, (_, i) => i + 1); // Números del 1 al 99
+    let availableNumbers = Array.from({ length: 99 }, (_, i) => i + 1); 
 
     const htmlElements = {
         generateBtn: document.getElementById('generateBtn'),
@@ -38,17 +38,17 @@ const NumberApp = (() => {
 
     const generateNumber = () => {
         const randomIndex = Math.floor(Math.random() * availableNumbers.length);
-        const randomNum = availableNumbers.splice(randomIndex, 1)[0]; // Remueve y obtiene el número
-        numbers.push(randomNum); // Lo agrega a los números generados
+        const randomNum = availableNumbers.splice(randomIndex, 1)[0]; 
+        numbers.push(randomNum); 
     };
 
     const updateNumberGrid = () => {
-        htmlElements.numberGrid.innerHTML = ""; // Limpia la cuadrícula antes de agregar nuevos números
+        htmlElements.numberGrid.innerHTML = "";
 
         numbers.forEach(num => {
             const numberDiv = document.createElement('div');
             numberDiv.classList.add('number');
-            numberDiv.textContent = num < 10 ? `0${num}` : num; // Formato de dos dígitos
+            numberDiv.textContent = num < 10 ? `0${num}` : num;
             htmlElements.numberGrid.appendChild(numberDiv);
         });
     };
