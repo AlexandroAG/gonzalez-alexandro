@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 4rem;
+  font-size: 20px;
+  background-color: #031926;
+}
+
+section > img {
+  width: 240px;
+  height: 90px;
+  margin-left: 200px;
+  position: absolute;
+  margin-top: -90px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main > section:nth-child(1) {
+  width: min(100%, 700px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+section {
+  position: relative;
+  border-radius: 1%;
+}
+
+section > img:hover {
+  transform: scale(1.1);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  gap: 1rem; 
+}
+
+.input-wrapper {
+  flex: 1; 
+}
+
+#pokemon-hability-select {
+  width: 100%; 
+  padding: 10px; 
+  font-size: 16px; 
+
+}
+
+input:placeholder-shown {
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #3903fe;
+}
+
+#pokemon-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  width: min(100%, 700px);
+  gap: 1rem;
+}
+
+.pokemon-card {
+  background-color: #f9f9f9;
+  margin: 1px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 700px;
+  border-radius: 5px;
+}
+
+.pokemon-card__header {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  gap: 25px;
+  text-transform: capitalize;
+
+}
+
+.pokemon-card__header h2 {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pokemon-card__body1{
+  display: flex;
+  gap: 280px;
+  flex-wrap: wrap;
+  justify-content: left;  
+  margin-left: 100px;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+.pokemon-card__body4 {
+  display: flex;
+  gap: 200px;
+  flex-wrap: wrap;
+  justify-content: center;  
+  margin-right: -5% ;
+  margin-left: 90px;
+}
+
+.pokemon-card__body4 img {
+  width: 125px; 
+  margin-left: -200px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 487px; 
+  margin-top: 10px;
+  justify-content: left;
+  
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #2e00fa;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.ability-card {
+  width: 350px;
+  background-color: #f0f8ff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.ability-card__header {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+
+}
+
+.ability-card__body {
+  margin-top: 15px;
+}
